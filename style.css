@@ -280,13 +280,12 @@ ul{
 }
 .contact-lead{
     max-width: 52ch;
-    margin-bottom: var(--s64);
+    margin-bottom: var(--s32);
     color: var(--ink-muted);
     font-size: var(--body);
 }
 .contact-links{
     display: grid;
-    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--s16);
 }
@@ -338,7 +337,7 @@ ul{
 .footer-muted{
     font-size: var(--sm);
     margin-top: var(--s8);}
-#to-top{
+#to-top:hover{
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -368,6 +367,11 @@ ul{
 .reveal.is-visible{
     opacity: 1;
     transform: translateY(0);
+}
+a:focus-visible,
+button:focus-visible{
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
 }
 @media (max-width: 600px) {
     .hero{

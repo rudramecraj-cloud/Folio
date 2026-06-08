@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <nav class="nav" aria-label="Main Navigation">
         <div class="container nav-inner">
             <span class="nav-brand">Portfolio</span>
@@ -18,7 +19,14 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button class="theme-btn" id="theme-toggle" aria-label="Toggle Theme">🌙</button></li>
+                <li>
+                    <button 
+                        class="theme-btn" 
+                        id="theme-toggle" 
+                        aria-label="Toggle Theme">
+                        🌙
+                    </button>
+            </li>
             </ul>
         </div>
     </nav>
@@ -34,7 +42,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="main-content">
         <section class="section" id="projects">
             <div class="container">
                 <p class="section-label">01-Work</p>
@@ -114,15 +122,15 @@
             <h2 class="section-title">Contact</h2>
             <p class="contact-desc">Open to internships, freelance design, and good conversations. Fastest way to reach me is by E-Mail.</p>
             <div class="contact-links">
-                <a href="mailto:rudra.mec.raj@gmail.com" class="contact-link">
+                <a href="mailto:rudra.mec.raj@gmail.com" class="contact-link" label="Send me an email">
                     <span class="contact-link-label">Email Me</span>
                     <span class="contact-link-value">✉️ rudra.mec.raj@gmail.com</span>
                 </a>
-                <a href="https://github.com/rudramecraj-cloud" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <a href="https://github.com/rudramecraj-cloud" target="_blank" rel="noopener noreferrer" class="contact-link" label="My Github Profile">
                     <span class="contact-link-label">GitHub</span>
                     <span class="contact-link-value">💻 https://github.com/rudramecraj-cloud</span>
                 </a>
-                <a href="https://www.linkedin.com/in/rudra-raj-60b8a537a/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <a href="https://www.linkedin.com/in/rudra-raj-60b8a537a/" target="_blank" rel="noopener noreferrer" class="contact-link" label="My LinkedIn Profile">
                     <span class="contact-link-label">LinkedIn</span>
                     <span class="contact-link-value">💼 https://www.linkedin.com/in/rudra-raj-60b8a537a/</span>
                 </a>
@@ -137,7 +145,7 @@
         </div>
     </footer>
     <button id="to-top" >↑</button>
-    <script src="script.js"></script> 
+    <script src="script.js" defer></script> 
 </body>
 </html>
 

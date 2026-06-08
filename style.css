@@ -37,6 +37,17 @@
 
   --shadow: 0 4px 16px rgba(26,26,26,0.06);
 }
+.skip-link{
+    position:absolute;
+    left:-9999px;
+}
+
+.skip-link:focus{
+    left:20px;
+    top:20px;
+    background:white;
+    padding:10px;
+}
 body.dark {
   --primary:    #7FB5D5;
   --ink:        #F5F1E4;

@@ -288,6 +288,91 @@ ul{
   color: var(--primary);
   font-weight: 600;
 }
+
+.education-grid {
+  display: grid;
+  gap: var(--s24);
+}
+
+.education-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--s24);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+}
+
+.education-heading {
+  font-size: var(--h3);
+  font-weight: 700;
+  margin-bottom: var(--s16);
+  color: var(--ink);
+}
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s12);
+}
+
+.education-detail-item {
+  color: var(--ink-muted);
+  font-size: var(--body);
+  line-height: 1.6;
+}
+
+.education-label {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.experience-grid {
+  display: grid;
+  gap: var(--s24);
+}
+
+.experience-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--s24);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+}
+
+.experience-title {
+  font-size: var(--h3);
+  font-weight: 700;
+  margin-bottom: var(--s16);
+  color: var(--ink);
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s12);
+}
+
+.experience-detail-item {
+  color: var(--ink-muted);
+  font-size: var(--body);
+  line-height: 1.6;
+}
+
+.experience-label {
+  color: var(--primary);
+  font-weight: 600;
+}
+
 .skill-reveal{
     margin-bottom: var(--s24);
 }
@@ -321,6 +406,35 @@ ul{
     border-radius:var(--r-pill);
     transition:width 0.6s ease;
 }
+
+.skill-filter-buttons {
+    display: flex;
+    gap: var(--s16);
+    margin-bottom: var(--s32);
+}
+
+.skill-filter-btn {
+    padding: var(--s12) var(--s24);
+    border: 2px solid var(--border);
+    background: transparent;
+    border-radius: var(--r-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--ink);
+}
+
+.skill-filter-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.skill-filter-btn.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
 .btn-secondary{
     border:1px solid var(--border);
     background:transparent;
